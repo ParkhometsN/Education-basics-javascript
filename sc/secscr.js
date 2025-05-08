@@ -79,7 +79,7 @@
 //     alert('кнопка нажата')
 // }
 
-browser = prompt('choose browser', '');
+// browser = prompt('choose browser', '');
 
 // switch (browser) {
 //     case 'Edge':
@@ -134,3 +134,24 @@ browser = prompt('choose browser', '');
 //         alert('2,3')
 //         break;
 // };
+
+// button = document.getElementById('d').addEventListener('click', ShowAlert)
+
+// function ShowAlert (){
+//     alert('привет')
+// }
+
+
+const block = document.getElementById('block');
+const page_color = document.querySelector('body');
+let blackpage = false
+
+block.addEventListener('click', function(){
+    if (blackpage){
+        page_color.style.backgroundColor = '#1d1d1d';
+    }else{
+        page_color.style.backgroundColor = '#fff';
+    }
+    blackpage = !blackpage;
+});
+
